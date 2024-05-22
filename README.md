@@ -25,4 +25,4 @@ To run the project locally:
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-username/salaamstyle-ecommerce.git
+   git clone https://github.com/fareesthemass/SalaamStyle-E-commerce.git
