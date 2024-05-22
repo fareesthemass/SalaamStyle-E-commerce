@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #F5F5F5;
+    color: #003366;
+}
+
+.navfix {
+    position: sticky;
+    top: 0px;
+    bottom: 5px;
+    width: 100%;
+    z-index: 0;
+    background-color: #F5F5F5;
+    display: block;
+    z-index: 1;
+}
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    align-items: center;
+
+}
+
+.navbarbuttoncontainer {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbarbutton {
+    text-decoration: none;
+    color: #003366;
+
+}
+
+.navbarbutton:hover {
+    text-decoration: underline;
+}
+
+.navbartaggle {
+    display: none;
+}
+
+.navbartaggle:hover {
+    cursor: pointer;
+}
+
+.sidenavbarbuttoncontainer {
+
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: -60%;
+    top: 0;
+    background-color: #061c32;
+    position: fixed;
+    transition: 2s;
+    z-index: 1;
+
+}
+
+.sidenavbarbutton {
+    margin-bottom: 30px;
+    margin-left: 5px;
+}
+
+.sidenavbarbutton a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.sidenavbarbutton a:hover {
+    text-decoration: underline;
+}
+
+.sidebarclosebutton {
+    color: #F5F5F5;
+    text-align: right;
+    font-size: 25px;
+    top: 0;
+    margin-right: 6px;
+}
+
+.sidebarclosebutton :hover {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    z-index: 1;
+}
+
+.header button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #1d232d;
+    color: aliceblue;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.header img {
+    border-radius: 10px;
+}
+
+.customtop {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custombottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.custombottom div {
+    background-color: #d5d7d8;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.newarrival {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.newarrivalcontainer {
+    position: relative;
+    flex-basis: 20%;
+    border-radius: 10px;
+}
+
+.newarrivalcontainer img {
+    border-radius: 10px;
+}
+
+.newarrivalcontainer button {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #061c32;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.newarrivalcontainer button:hover {
+    background-color: #061c32;
+    color: #d5d7d8;
+}
+
+#newarrivaltitle {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#mostwanted {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.newsletter input {
+    width: 80%;
+    padding: 11px;
+    border-style: solid;
+    border-color: #061c32;
+    border-width: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.newsletter button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: #003366;
+    color: #d5d7d8;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.newsletter button:hover {
+    background-color: #061c32;
+    color: #d5d7d8;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #061c32;
+    color: #F5F5F5;
+}
+
+.collection {
+    padding-top: 30px;
+
+}
+
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    border-color: #061c32;
+    padding: 10px;
+    border: solid black 2px;
+    margin: auto;
+}
+
+.searchbar input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.searchbar input:focus {
+    outline: none;
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+
+}
+
+.collectionimg {
+    flex-basis: 20%;
+    position: relative;
+}
+
+.collectionimg img {
+    border-radius: 5px;
+}
+
+.collectionbtn {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #061c32;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.collectionbtn:hover {
+    background-color: #061c32;
+    color: #d5d7d8;
+}
+
+.contactfull {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+
+
+}
+
+.formcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 700px;
+    background-color: #061c32;
+    color: #F5F5F5;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-basis: 80%;
+
+
+}
+
+.forms h3 {
+    margin: 20px;
+}
+
+.forms label {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.formcontainer textarea {
+    width: 100%;
+    font-size: 20px;
+}
+
+.formcontainer input,
+.formcontainer textarea {
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+.forms button {
+    margin: 20px;
+    background-color: transparent;
+    color: #F5F5F5;
+    border: none;
+}
+
+.submitbtncontainer {
+    display: flex;
+}
+
+.submitbtn {
+    background-color: #003366;
+    color: #F5F5F5;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.submitbtn:hover {
+    cursor: pointer;
+    background-color: #061c32;
+}
+
+
+@media screen and (max-width:600px) {
+    .navbartaggle {
+        display: block;
+    }
+
+    .navbarbutton {
+        display: none;
+    }
+
+    .headerimg {
+        display: none;
+    }
+
+    .customtop {
+        display: none;
+    }
+
+    .custombottom {
+        display: block;
+    }
+
+    .forms {
+        flex-basis: 60%;
+    }
+}
